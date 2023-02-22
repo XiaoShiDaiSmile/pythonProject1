@@ -1,0 +1,865 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\000031}}
+@font-face {
+  font-family: "layui-icon";
+  src: url("/static/font/iconfont.eot");
+  src: url("/static/font/iconfont.eot") format("embedded-opentype"),
+    url("/static/font/iconfont.ttf") format("truetype"),
+    url("/static/font/iconfont.woff") format("woff"),
+    url("/static/font/iconfont.svg") format("svg"); }
+
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\000036}}
+  .layui-icon {
+    font-family: "layui-icon";
+    font-size: 14px;
+    font-style: normal;
+    font-smoothing: anytialiased; }
+
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000313}}
+    .layui-icon-3column:before {
+      content: ""; }
+
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000317}}
+      .layui-icon-column-4:before {
+        content: ""; }
+
+        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000321}}
+        .layui-icon-add:before {
+          content: ""; }
+
+          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000325}}
+          .layui-icon-add-circle:before {
+            content: ""; }
+
+            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000329}}
+            .layui-icon-adjust:before {
+              content: ""; }
+
+              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000333}}
+              .layui-icon-arrow-up-circle:before {
+                content: ""; }
+
+                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000337}}
+                .layui-icon-arrow-right-circle:before {
+                  content: ""; }
+
+                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000341}}
+                  .layui-icon-arrow-down:before {
+                    content: ""; }
+
+                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000345}}
+                    .layui-icon-ashbin:before {
+                      content: ""; }
+
+                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000349}}
+                      .layui-icon-arrow-right:before {
+                        content: ""; }
+
+                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000353}}
+                        .layui-icon-browse:before {
+                          content: ""; }
+
+                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000357}}
+                          .layui-icon-bottom:before {
+                            content: ""; }
+
+                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000361}}
+                            .layui-icon-back:before {
+                              content: ""; }
+
+                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000365}}
+                              .layui-icon-bad:before {
+                                content: ""; }
+
+                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000369}}
+                                .layui-icon-arrow-double-left:before {
+                                  content: ""; }
+
+                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000373}}
+                                  .layui-icon-arrow-left-circle:before {
+                                    content: ""; }
+
+                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000377}}
+                                    .layui-icon-arrow-double-right:before {
+                                      content: ""; }
+
+                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000381}}
+                                      .layui-icon-caps-lock:before {
+                                        content: ""; }
+
+                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000385}}
+                                        .layui-icon-camera:before {
+                                          content: ""; }
+
+                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000389}}
+                                          .layui-icon-chart-bar:before {
+                                            content: ""; }
+
+                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000393}}
+                                            .layui-icon-attachment:before {
+                                              content: ""; }
+
+                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\0000397}}
+                                              .layui-icon-code:before {
+                                                content: ""; }
+
+                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003101}}
+                                                .layui-icon-close:before {
+                                                  content: ""; }
+
+                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003105}}
+                                                  .layui-icon-check-item:before {
+                                                    content: ""; }
+
+                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003109}}
+                                                    .layui-icon-calendar:before {
+                                                      content: ""; }
+
+                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003113}}
+                                                      .layui-icon-comment:before {
+                                                        content: ""; }
+
+                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003117}}
+                                                        .layui-icon-column-vertical:before {
+                                                          content: ""; }
+
+                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003121}}
+                                                          .layui-icon-column-horizontal:before {
+                                                            content: ""; }
+
+                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003125}}
+                                                            .layui-icon-complete:before {
+                                                              content: ""; }
+
+                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003129}}
+                                                              .layui-icon-chart-pie:before {
+                                                                content: ""; }
+
+                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003133}}
+                                                                .layui-icon-cry:before {
+                                                                  content: ""; }
+
+                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003137}}
+                                                                  .layui-icon-customer-service:before {
+                                                                    content: ""; }
+
+                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003141}}
+                                                                    .layui-icon-delete:before {
+                                                                      content: ""; }
+
+                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003145}}
+                                                                      .layui-icon-direction-down:before {
+                                                                        content: ""; }
+
+                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003149}}
+                                                                        .layui-icon-copy:before {
+                                                                          content: ""; }
+
+                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003153}}
+                                                                          .layui-icon-cut:before {
+                                                                            content: ""; }
+
+                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003157}}
+                                                                            .layui-icon-data-view:before {
+                                                                              content: ""; }
+
+                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003161}}
+                                                                              .layui-icon-direction-down-circle:before {
+                                                                                content: ""; }
+
+                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003165}}
+                                                                                .layui-icon-direction-right:before {
+                                                                                  content: ""; }
+
+                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003169}}
+                                                                                  .layui-icon-direction-up:before {
+                                                                                    content: ""; }
+
+                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003173}}
+                                                                                    .layui-icon-discount:before {
+                                                                                      content: ""; }
+
+                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003177}}
+                                                                                      .layui-icon-direction-left:before {
+                                                                                        content: ""; }
+
+                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003181}}
+                                                                                        .layui-icon-download:before {
+                                                                                          content: ""; }
+
+                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003185}}
+                                                                                          .layui-icon-electronics:before {
+                                                                                            content: ""; }
+
+                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003189}}
+                                                                                            .layui-icon-drag:before {
+                                                                                              content: ""; }
+
+                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003193}}
+                                                                                              .layui-icon-elipsis:before {
+                                                                                                content: ""; }
+
+                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003197}}
+                                                                                                .layui-icon-export:before {
+                                                                                                  content: ""; }
+
+                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003201}}
+                                                                                                  .layui-icon-explain:before {
+                                                                                                    content: ""; }
+
+                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003205}}
+                                                                                                    .layui-icon-edit:before {
+                                                                                                      content: ""; }
+
+                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003209}}
+                                                                                                      .layui-icon-eye-close:before {
+                                                                                                        content: ""; }
+
+                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003213}}
+                                                                                                        .layui-icon-email:before {
+                                                                                                          content: ""; }
+
+                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003217}}
+                                                                                                          .layui-icon-error:before {
+                                                                                                            content: ""; }
+
+                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003221}}
+                                                                                                            .layui-icon-favorite:before {
+                                                                                                              content: ""; }
+
+                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003225}}
+                                                                                                              .layui-icon-file-common:before {
+                                                                                                                content: ""; }
+
+                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003229}}
+                                                                                                                .layui-icon-file-delete:before {
+                                                                                                                  content: ""; }
+
+                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003233}}
+                                                                                                                  .layui-icon-file-add:before {
+                                                                                                                    content: ""; }
+
+                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003237}}
+                                                                                                                    .layui-icon-film:before {
+                                                                                                                      content: ""; }
+
+                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003241}}
+                                                                                                                      .layui-icon-fabulous:before {
+                                                                                                                        content: ""; }
+
+                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003245}}
+                                                                                                                        .layui-icon-file:before {
+                                                                                                                          content: ""; }
+
+                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003249}}
+                                                                                                                          .layui-icon-folder-close:before {
+                                                                                                                            content: ""; }
+
+                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003253}}
+                                                                                                                            .layui-icon-filter:before {
+                                                                                                                              content: ""; }
+
+                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003257}}
+                                                                                                                              .layui-icon-good:before {
+                                                                                                                                content: ""; }
+
+                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003261}}
+                                                                                                                                .layui-icon-hide:before {
+                                                                                                                                  content: ""; }
+
+                                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003265}}
+                                                                                                                                  .layui-icon-home:before {
+                                                                                                                                    content: ""; }
+
+                                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003269}}
+                                                                                                                                    .layui-icon-history:before {
+                                                                                                                                      content: ""; }
+
+                                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003273}}
+                                                                                                                                      .layui-icon-file-open:before {
+                                                                                                                                        content: ""; }
+
+                                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003277}}
+                                                                                                                                        .layui-icon-forward:before {
+                                                                                                                                          content: ""; }
+
+                                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003281}}
+                                                                                                                                          .layui-icon-import:before {
+                                                                                                                                            content: ""; }
+
+                                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003285}}
+                                                                                                                                            .layui-icon-image-text:before {
+                                                                                                                                              content: ""; }
+
+                                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003289}}
+                                                                                                                                              .layui-icon-keyboard-26:before {
+                                                                                                                                                content: ""; }
+
+                                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003293}}
+                                                                                                                                                .layui-icon-keyboard-9:before {
+                                                                                                                                                  content: ""; }
+
+                                                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003297}}
+                                                                                                                                                  .layui-icon-link:before {
+                                                                                                                                                    content: ""; }
+
+                                                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003301}}
+                                                                                                                                                    .layui-icon-layout:before {
+                                                                                                                                                      content: ""; }
+
+                                                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003305}}
+                                                                                                                                                      .layui-icon-fullscreen-shrink:before {
+                                                                                                                                                        content: ""; }
+
+                                                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003309}}
+                                                                                                                                                        .layui-icon-layers:before {
+                                                                                                                                                          content: ""; }
+
+                                                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003313}}
+                                                                                                                                                          .layui-icon-lock:before {
+                                                                                                                                                            content: ""; }
+
+                                                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003317}}
+                                                                                                                                                            .layui-icon-fullscreen-expand:before {
+                                                                                                                                                              content: ""; }
+
+                                                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003321}}
+                                                                                                                                                              .layui-icon-map:before {
+                                                                                                                                                                content: ""; }
+
+                                                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003325}}
+                                                                                                                                                                .layui-icon-meh:before {
+                                                                                                                                                                  content: ""; }
+
+                                                                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003329}}
+                                                                                                                                                                  .layui-icon-menu:before {
+                                                                                                                                                                    content: ""; }
+
+                                                                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003333}}
+                                                                                                                                                                    .layui-icon-loading:before {
+                                                                                                                                                                      content: ""; }
+
+                                                                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003337}}
+                                                                                                                                                                      .layui-icon-help:before {
+                                                                                                                                                                        content: ""; }
+
+                                                                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003341}}
+                                                                                                                                                                        .layui-icon-minus-circle:before {
+                                                                                                                                                                          content: ""; }
+
+                                                                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003345}}
+                                                                                                                                                                          .layui-icon-modular:before {
+                                                                                                                                                                            content: ""; }
+
+                                                                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003349}}
+                                                                                                                                                                            .layui-icon-notification:before {
+                                                                                                                                                                              content: ""; }
+
+                                                                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003353}}
+                                                                                                                                                                              .layui-icon-mic:before {
+                                                                                                                                                                                content: ""; }
+
+                                                                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003357}}
+                                                                                                                                                                                .layui-icon-more:before {
+                                                                                                                                                                                  content: ""; }
+
+                                                                                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003361}}
+                                                                                                                                                                                  .layui-icon-pad:before {
+                                                                                                                                                                                    content: ""; }
+
+                                                                                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003365}}
+                                                                                                                                                                                    .layui-icon-operation:before {
+                                                                                                                                                                                      content: ""; }
+
+                                                                                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003369}}
+                                                                                                                                                                                      .layui-icon-play:before {
+                                                                                                                                                                                        content: ""; }
+
+                                                                                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003373}}
+                                                                                                                                                                                        .layui-icon-print:before {
+                                                                                                                                                                                          content: ""; }
+
+                                                                                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003377}}
+                                                                                                                                                                                          .layui-icon-mobile-phone:before {
+                                                                                                                                                                                            content: ""; }
+
+                                                                                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003381}}
+                                                                                                                                                                                            .layui-icon-minus:before {
+                                                                                                                                                                                              content: ""; }
+
+                                                                                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003385}}
+                                                                                                                                                                                              .layui-icon-navigation:before {
+                                                                                                                                                                                                content: ""; }
+
+                                                                                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003389}}
+                                                                                                                                                                                                .layui-icon-pdf:before {
+                                                                                                                                                                                                  content: ""; }
+
+                                                                                                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003393}}
+                                                                                                                                                                                                  .layui-icon-prompt:before {
+                                                                                                                                                                                                    content: ""; }
+
+                                                                                                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003397}}
+                                                                                                                                                                                                    .layui-icon-move:before {
+                                                                                                                                                                                                      content: ""; }
+
+                                                                                                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003401}}
+                                                                                                                                                                                                      .layui-icon-refresh:before {
+                                                                                                                                                                                                        content: ""; }
+
+                                                                                                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003405}}
+                                                                                                                                                                                                        .layui-icon-run-up:before {
+                                                                                                                                                                                                          content: ""; }
+
+                                                                                                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003409}}
+                                                                                                                                                                                                          .layui-icon-picture:before {
+                                                                                                                                                                                                            content: ""; }
+
+                                                                                                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003413}}
+                                                                                                                                                                                                            .layui-icon-run-in:before {
+                                                                                                                                                                                                              content: ""; }
+
+                                                                                                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003417}}
+                                                                                                                                                                                                              .layui-icon-pin:before {
+                                                                                                                                                                                                                content: ""; }
+
+                                                                                                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003421}}
+                                                                                                                                                                                                                .layui-icon-save:before {
+                                                                                                                                                                                                                  content: ""; }
+
+                                                                                                                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003425}}
+                                                                                                                                                                                                                  .layui-icon-search:before {
+                                                                                                                                                                                                                    content: ""; }
+
+                                                                                                                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003429}}
+                                                                                                                                                                                                                    .layui-icon-share:before {
+                                                                                                                                                                                                                      content: ""; }
+
+                                                                                                                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003433}}
+                                                                                                                                                                                                                      .layui-icon-scanning:before {
+                                                                                                                                                                                                                        content: ""; }
+
+                                                                                                                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003437}}
+                                                                                                                                                                                                                        .layui-icon-security:before {
+                                                                                                                                                                                                                          content: ""; }
+
+                                                                                                                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003441}}
+                                                                                                                                                                                                                          .layui-icon-sign-out:before {
+                                                                                                                                                                                                                            content: ""; }
+
+                                                                                                                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003445}}
+                                                                                                                                                                                                                            .layui-icon-select:before {
+                                                                                                                                                                                                                              content: ""; }
+
+                                                                                                                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003449}}
+                                                                                                                                                                                                                              .layui-icon-stop:before {
+                                                                                                                                                                                                                                content: ""; }
+
+                                                                                                                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003453}}
+                                                                                                                                                                                                                                .layui-icon-success:before {
+                                                                                                                                                                                                                                  content: ""; }
+
+                                                                                                                                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003457}}
+                                                                                                                                                                                                                                  .layui-icon-smile:before {
+                                                                                                                                                                                                                                    content: ""; }
+
+                                                                                                                                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003461}}
+                                                                                                                                                                                                                                    .layui-icon-switch:before {
+                                                                                                                                                                                                                                      content: ""; }
+
+                                                                                                                                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003465}}
+                                                                                                                                                                                                                                      .layui-icon-setting:before {
+                                                                                                                                                                                                                                        content: ""; }
+
+                                                                                                                                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003469}}
+                                                                                                                                                                                                                                        .layui-icon-survey:before {
+                                                                                                                                                                                                                                          content: ""; }
+
+                                                                                                                                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003473}}
+                                                                                                                                                                                                                                          .layui-icon-task:before {
+                                                                                                                                                                                                                                            content: ""; }
+
+                                                                                                                                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003477}}
+                                                                                                                                                                                                                                            .layui-icon-skip:before {
+                                                                                                                                                                                                                                              content: ""; }
+
+                                                                                                                                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003481}}
+                                                                                                                                                                                                                                              .layui-icon-text:before {
+                                                                                                                                                                                                                                                content: ""; }
+
+                                                                                                                                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003485}}
+                                                                                                                                                                                                                                                .layui-icon-time:before {
+                                                                                                                                                                                                                                                  content: ""; }
+
+                                                                                                                                                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003489}}
+                                                                                                                                                                                                                                                  .layui-icon-telephone-out:before {
+                                                                                                                                                                                                                                                    content: ""; }
+
+                                                                                                                                                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003493}}
+                                                                                                                                                                                                                                                    .layui-icon-toggle-left:before {
+                                                                                                                                                                                                                                                      content: ""; }
+
+                                                                                                                                                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003497}}
+                                                                                                                                                                                                                                                      .layui-icon-toggle-right:before {
+                                                                                                                                                                                                                                                        content: ""; }
+
+                                                                                                                                                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003501}}
+                                                                                                                                                                                                                                                        .layui-icon-telephone:before {
+                                                                                                                                                                                                                                                          content: ""; }
+
+                                                                                                                                                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003505}}
+                                                                                                                                                                                                                                                          .layui-icon-top:before {
+                                                                                                                                                                                                                                                            content: ""; }
+
+                                                                                                                                                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003509}}
+                                                                                                                                                                                                                                                            .layui-icon-unlock:before {
+                                                                                                                                                                                                                                                              content: ""; }
+
+                                                                                                                                                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003513}}
+                                                                                                                                                                                                                                                              .layui-icon-user:before {
+                                                                                                                                                                                                                                                                content: ""; }
+
+                                                                                                                                                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003517}}
+                                                                                                                                                                                                                                                                .layui-icon-upload:before {
+                                                                                                                                                                                                                                                                  content: ""; }
+
+                                                                                                                                                                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003521}}
+                                                                                                                                                                                                                                                                  .layui-icon-work:before {
+                                                                                                                                                                                                                                                                    content: ""; }
+
+                                                                                                                                                                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003525}}
+                                                                                                                                                                                                                                                                    .layui-icon-training:before {
+                                                                                                                                                                                                                                                                      content: ""; }
+
+                                                                                                                                                                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003529}}
+                                                                                                                                                                                                                                                                      .layui-icon-warning:before {
+                                                                                                                                                                                                                                                                        content: ""; }
+
+                                                                                                                                                                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003533}}
+                                                                                                                                                                                                                                                                        .layui-icon-zoom-in:before {
+                                                                                                                                                                                                                                                                          content: ""; }
+
+                                                                                                                                                                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003537}}
+                                                                                                                                                                                                                                                                          .layui-icon-zoom-out:before {
+                                                                                                                                                                                                                                                                            content: ""; }
+
+                                                                                                                                                                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003541}}
+                                                                                                                                                                                                                                                                            .layui-icon-add-bold:before {
+                                                                                                                                                                                                                                                                              content: ""; }
+
+                                                                                                                                                                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003545}}
+                                                                                                                                                                                                                                                                              .layui-icon-arrow-left-bold:before {
+                                                                                                                                                                                                                                                                                content: ""; }
+
+                                                                                                                                                                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003549}}
+                                                                                                                                                                                                                                                                                .layui-icon-arrow-up-bold:before {
+                                                                                                                                                                                                                                                                                  content: ""; }
+
+                                                                                                                                                                                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003553}}
+                                                                                                                                                                                                                                                                                  .layui-icon-close-bold:before {
+                                                                                                                                                                                                                                                                                    content: ""; }
+
+                                                                                                                                                                                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003557}}
+                                                                                                                                                                                                                                                                                    .layui-icon-arrow-down-bold:before {
+                                                                                                                                                                                                                                                                                      content: ""; }
+
+                                                                                                                                                                                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003561}}
+                                                                                                                                                                                                                                                                                      .layui-icon-minus-bold:before {
+                                                                                                                                                                                                                                                                                        content: ""; }
+
+                                                                                                                                                                                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003565}}
+                                                                                                                                                                                                                                                                                        .layui-icon-arrow-right-bold:before {
+                                                                                                                                                                                                                                                                                          content: ""; }
+
+                                                                                                                                                                                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003569}}
+                                                                                                                                                                                                                                                                                          .layui-icon-select-bold:before {
+                                                                                                                                                                                                                                                                                            content: ""; }
+
+                                                                                                                                                                                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003573}}
+                                                                                                                                                                                                                                                                                            .layui-icon-arrow-up-filling:before {
+                                                                                                                                                                                                                                                                                              content: ""; }
+
+                                                                                                                                                                                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003577}}
+                                                                                                                                                                                                                                                                                              .layui-icon-arrow-down-filling:before {
+                                                                                                                                                                                                                                                                                                content: ""; }
+
+                                                                                                                                                                                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003581}}
+                                                                                                                                                                                                                                                                                                .layui-icon-arrow-left-filling:before {
+                                                                                                                                                                                                                                                                                                  content: ""; }
+
+                                                                                                                                                                                                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003585}}
+                                                                                                                                                                                                                                                                                                  .layui-icon-arrow-right-filling:before {
+                                                                                                                                                                                                                                                                                                    content: ""; }
+
+                                                                                                                                                                                                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003589}}
+                                                                                                                                                                                                                                                                                                    .layui-icon-caps-unlock-filling:before {
+                                                                                                                                                                                                                                                                                                      content: ""; }
+
+                                                                                                                                                                                                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003593}}
+                                                                                                                                                                                                                                                                                                      .layui-icon-comment-filling:before {
+                                                                                                                                                                                                                                                                                                        content: ""; }
+
+                                                                                                                                                                                                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003597}}
+                                                                                                                                                                                                                                                                                                        .layui-icon-check-item-filling:before {
+                                                                                                                                                                                                                                                                                                          content: ""; }
+
+                                                                                                                                                                                                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003601}}
+                                                                                                                                                                                                                                                                                                          .layui-icon-clock-filling:before {
+                                                                                                                                                                                                                                                                                                            content: ""; }
+
+                                                                                                                                                                                                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003605}}
+                                                                                                                                                                                                                                                                                                            .layui-icon-delete-filling:before {
+                                                                                                                                                                                                                                                                                                              content: ""; }
+
+                                                                                                                                                                                                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003609}}
+                                                                                                                                                                                                                                                                                                              .layui-icon-decline-filling:before {
+                                                                                                                                                                                                                                                                                                                content: ""; }
+
+                                                                                                                                                                                                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003613}}
+                                                                                                                                                                                                                                                                                                                .layui-icon-dynamic-filling:before {
+                                                                                                                                                                                                                                                                                                                  content: ""; }
+
+                                                                                                                                                                                                                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003617}}
+                                                                                                                                                                                                                                                                                                                  .layui-icon-intermediate-filling:before {
+                                                                                                                                                                                                                                                                                                                    content: ""; }
+
+                                                                                                                                                                                                                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003621}}
+                                                                                                                                                                                                                                                                                                                    .layui-icon-favorite-filling:before {
+                                                                                                                                                                                                                                                                                                                      content: ""; }
+
+                                                                                                                                                                                                                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003625}}
+                                                                                                                                                                                                                                                                                                                      .layui-icon-layout-filling:before {
+                                                                                                                                                                                                                                                                                                                        content: ""; }
+
+                                                                                                                                                                                                                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003629}}
+                                                                                                                                                                                                                                                                                                                        .layui-icon-help-filling:before {
+                                                                                                                                                                                                                                                                                                                          content: ""; }
+
+                                                                                                                                                                                                                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003633}}
+                                                                                                                                                                                                                                                                                                                          .layui-icon-history-filling:before {
+                                                                                                                                                                                                                                                                                                                            content: ""; }
+
+                                                                                                                                                                                                                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003637}}
+                                                                                                                                                                                                                                                                                                                            .layui-icon-filter-filling:before {
+                                                                                                                                                                                                                                                                                                                              content: ""; }
+
+                                                                                                                                                                                                                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003641}}
+                                                                                                                                                                                                                                                                                                                              .layui-icon-file-common-filling:before {
+                                                                                                                                                                                                                                                                                                                                content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003645}}
+                                                                                                                                                                                                                                                                                                                                .layui-icon-news-filling:before {
+                                                                                                                                                                                                                                                                                                                                  content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003649}}
+                                                                                                                                                                                                                                                                                                                                  .layui-icon-edit-filling:before {
+                                                                                                                                                                                                                                                                                                                                    content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003653}}
+                                                                                                                                                                                                                                                                                                                                    .layui-icon-fullscreen-expand-filling:before {
+                                                                                                                                                                                                                                                                                                                                      content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003657}}
+                                                                                                                                                                                                                                                                                                                                      .layui-icon-smile-filling:before {
+                                                                                                                                                                                                                                                                                                                                        content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003661}}
+                                                                                                                                                                                                                                                                                                                                        .layui-icon-rise-filling:before {
+                                                                                                                                                                                                                                                                                                                                          content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003665}}
+                                                                                                                                                                                                                                                                                                                                          .layui-icon-picture-filling:before {
+                                                                                                                                                                                                                                                                                                                                            content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003669}}
+                                                                                                                                                                                                                                                                                                                                            .layui-icon-notification-filling:before {
+                                                                                                                                                                                                                                                                                                                                              content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003673}}
+                                                                                                                                                                                                                                                                                                                                              .layui-icon-user-filling:before {
+                                                                                                                                                                                                                                                                                                                                                content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003677}}
+                                                                                                                                                                                                                                                                                                                                                .layui-icon-setting-filling:before {
+                                                                                                                                                                                                                                                                                                                                                  content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003681}}
+                                                                                                                                                                                                                                                                                                                                                  .layui-icon-switch-filling:before {
+                                                                                                                                                                                                                                                                                                                                                    content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003685}}
+                                                                                                                                                                                                                                                                                                                                                    .layui-icon-work-filling:before {
+                                                                                                                                                                                                                                                                                                                                                      content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003689}}
+                                                                                                                                                                                                                                                                                                                                                      .layui-icon-task-filling:before {
+                                                                                                                                                                                                                                                                                                                                                        content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003693}}
+                                                                                                                                                                                                                                                                                                                                                        .layui-icon-success-filling:before {
+                                                                                                                                                                                                                                                                                                                                                          content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003697}}
+                                                                                                                                                                                                                                                                                                                                                          .layui-icon-warning-filling:before {
+                                                                                                                                                                                                                                                                                                                                                            content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003701}}
+                                                                                                                                                                                                                                                                                                                                                            .layui-icon-folder-filling:before {
+                                                                                                                                                                                                                                                                                                                                                              content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003705}}
+                                                                                                                                                                                                                                                                                                                                                              .layui-icon-map-filling:before {
+                                                                                                                                                                                                                                                                                                                                                                content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003709}}
+                                                                                                                                                                                                                                                                                                                                                                .layui-icon-prompt-filling:before {
+                                                                                                                                                                                                                                                                                                                                                                  content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003713}}
+                                                                                                                                                                                                                                                                                                                                                                  .layui-icon-meh-filling:before {
+                                                                                                                                                                                                                                                                                                                                                                    content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003717}}
+                                                                                                                                                                                                                                                                                                                                                                    .layui-icon-cry-filling:before {
+                                                                                                                                                                                                                                                                                                                                                                      content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003721}}
+                                                                                                                                                                                                                                                                                                                                                                      .layui-icon-top-filling:before {
+                                                                                                                                                                                                                                                                                                                                                                        content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003725}}
+                                                                                                                                                                                                                                                                                                                                                                        .layui-icon-home-filling:before {
+                                                                                                                                                                                                                                                                                                                                                                          content: ""; }
+
+                                                                                                                                                                                                                                                                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/icon\.scss}line{font-family:\00003729}}
+                                                                                                                                                                                                                                                                                                                                                                          .layui-icon-sorting:before {
+                                                                                                                                                                                                                                                                                                                                                                            content: ""; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\000031}}
+* {
+  margin: 0;
+  padding: 0; }
+
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\000035}}
+  ul, li, dl, dd {
+    list-style: none; }
+
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\000038}}
+    a {
+      text-decoration: none; }
+
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\0000311}}
+      body {
+        background: #f6f6f6; }
+
+        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\0000316}}
+        .layui-header {
+          height: 60px;
+          line-height: 60px;
+          font-size: 0;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          background: #fff;
+          z-index: 1003;
+          zoom: 1;
+          white-space: nowrap; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\0000327}}
+          .layui-header .layui-logo {
+            width: 200px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            font-size: 0;
+            background: #182027;
+            color: #fff;
+            display: inline-block;
+            vertical-align: middle;
+            transition: all 0.3s ease;
+            position: absolute;
+            top: 0;
+            left: 0; }
+            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\0000340}}
+            .layui-header .layui-logo i {
+              width: 40px;
+              height: 60px;
+              text-align: center;
+              line-height: 60px;
+              font-size: 29px;
+              font-weight: bold;
+              color: #fff;
+              display: inline-block;
+              vertical-align: middle; }
+              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\0000351}}
+              .layui-header .layui-logo h1 {
+                height: 60px;
+                line-height: 60px;
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 25px;
+                font-weight: bold;
+                color: #fff; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\0000362}}
+          .layui-header .layui-header-content .layui-header-tool {
+            height: 60px;
+            line-height: 60px;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0;
+            position: absolute;
+            top: 0;
+            left: 239px;
+            transition: all 0.3s ease; }
+            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\0000371}}
+            .layui-header .layui-header-content .layui-header-tool i {
+              width: 32px;
+              height: 32px;
+              text-align: center;
+              line-height: 32px;
+              font-size: 17px;
+              font-weight: bold;
+              color: rgba(107, 107, 107, 0.7);
+              border-radius: 2px;
+              cursor: pointer;
+              margin-top: 15px;
+              display: inline-block;
+              transition: all 0.3s ease; }
+              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\0000383}}
+              .layui-header .layui-header-content .layui-header-tool i:hover {
+                background: #e4e4e4;
+                color: #565656; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\0000393}}
+          .layui-header .layui-header-menu {
+            height: 60px;
+            line-height: 60px;
+            display: inline-block;
+            vertical-align: middle;
+            position: absolute;
+            top: 0;
+            left: 297px;
+            font-size: 0;
+            transition: all 0.3s ease; }
+            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003102}}
+            .layui-header .layui-header-menu li {
+              min-width: 79px;
+              height: 60px;
+              text-align: center;
+              line-height: 60px;
+              display: inline-block;
+              vertical-align: middle;
+              cursor: pointer;
+              font-size: 0; }
+              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003110}}
+              .layui-header .layui-header-menu li a {
+                height: 60px;
+                display: block;
+                padding: 0 22px;
+                font-size: 14px;
+                font-weight: bold;
+                color: rgba(107, 107, 107, 0.7); }
+                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003118}}
+                .layui-header .layui-header-menu li.layui-this {
+                  background: #e4e4e4; }
+                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003119}}
+                  .layui-header .layui-header-menu li.layui-this a {
+                    color: #565656; }

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% assets "all_css" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}">
+    {% endassets %}
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    {% assets "all_js" %}
+        <script src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+</head>
+<body class="layui-all">
+    <div class="layui-admin">
+        <div class="layui-header">
+            <div class="layui-logo">
+                <a href="javascript:;">
+                    <i class="layui-icon layui-icon-home"></i>
+                    <h1>Marify</h1>
+                </a>
+            </div>
+            <div class="layui-header-content">
+                <a href="javascript:;">
+                    <div class="layui-header-tool">
+                        <i class="layui-icon layui-icon-toggle-left" data-side-fold="1"></i>
+                    </div>
+                </a>
+                <ul class="layui-nav layui-header-menu">
+                    <li class="layui-this">
+                        <a href="javascript:;">
+                            <span>系统设置</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="layui-nav layui-nav-right">
+                    <li class="layui-nav-item">
+                        <a href="javascript:;" data-refresh="refresh">
+                            <i class="layui-icon layui-icon-refresh"></i>
+                        </a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;" data-check-screen="full">
+                            <i class="layui-icon layui-icon-fullscreen-expand"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
