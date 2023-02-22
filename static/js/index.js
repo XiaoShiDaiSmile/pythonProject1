@@ -277,7 +277,7 @@ Menu.prototype = {
                     '<dd>'+
                         '<a href="javascript:;" data-mousedown-close="other">'+
                             '<i class="layui-icon layui-icon-setting"></i>'+
-                            '<span>关闭当前</span>'+
+                            '<span>关闭其它</span>'+
                         '</a>'+
                     '</dd>'+
                     '<dd>'+
