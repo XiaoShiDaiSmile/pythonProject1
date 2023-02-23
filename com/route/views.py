@@ -13,3 +13,7 @@ views = Blueprint('views',__name__)
 def index():
     return render_template("admin/index.html")
 
+@views.route("/file")
+def fileindex():
+    return render_template("admin/fileIndex.html")
+

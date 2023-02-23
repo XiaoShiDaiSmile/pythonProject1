@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% assets "all_css" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}">
+    {% endassets %}
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    {% assets "all_js" %}
+        <script src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+</head>
+<body>
+    <div class="main">
+        <div class="layui-row layui-col-space1">
+            <div class="layui-col-sx3">1</div>
+            <div class="layui-col-sx7">2</div>
+        </div>
+    </div>
+</body>
+</html>

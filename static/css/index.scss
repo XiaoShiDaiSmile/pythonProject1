@@ -714,7 +714,42 @@ body{
     animation-duration:.3s;
     animation-fill-mode:both;
 }
+@keyframes anim01{
+    0%{
+        transform:translateX(100%);
+        opacity:0.5;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+.layui-anim-01{
+    animation-name:anim01;
+    animation-duration:.3s;
+    animation-fill-mode:both;
+}
+@keyframes anim01out{
+    0%{
+        transform:translateX(0);
+        opacity:1;
+    }
+    100%{
+        transform:translateX(100%);
+        opacity:0;
+    }
+}
+.layui-anim-01-out{
+    animation-name:anim01out;
+    animation-duration:.3s;
+    animation-fill-mode:both;
+}
 .layui-layer-dialog{
+    width:320px;
+    height:auto;
+    background:#fff;
+    border-radius:2px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.04);
     &.layui-layer-msg{
          line-height:36px;
         padding:0 9px;
@@ -732,5 +767,83 @@ body{
         .layui-layer-content{
             padding:0;
         }
+    }
+    .layui-layer-content{
+        padding:22px 14px;
+        box-sizing:border-box;
+        color:#333;
+        font-size:14px;
+    }
+}
+.layui-layer-title{
+    height:50px;
+    line-height:50px;
+    font-size:14px;
+    color:#333;
+    padding:0 79px 0 22px;
+    position:relative;
+    border-bottom:1px solid #eee;
+    background:#fff;
+    box-sizing:border-box;
+}
+.layui-layer-btn{
+    padding:9px;
+    font-size:0;
+    background:#fff;
+    position:relative;
+    border-top:1px solid #eee;
+    box-sizing:border-box;
+    .layui-btn{
+        background:#1e9fff;
+        color:#fff;
+    }
+    &.layui-layer-btn-right{
+        text-align:right;
+    }
+}
+.layui-layer-shade{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.layui-layer-setwin{
+    position:absolute;
+    top:15px;
+    right:22px;
+    font-size:14px;
+    cursor:pointer;
+    color:#333;
+}
+.layui-layer-page{
+    background:#fff;
+    border-radius:2px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.04);
+}
+
+//表单组件样式
+.layui-btn{
+    height:30px;
+    line-height:30px;
+    font-size:12px;
+    padding:0 9px;
+    border:1px solid transparent;
+    border-radius:2px;
+    transition:all .3s ease;
+    display:inline-block;
+    vertical-align:middle;
+    cursor:pointer;
+    margin:0 4px;
+    &:hover{
+        opacity:0.8;
+    }
+    &.layui-btn-primary{
+        background:#1e9fff;
+        color:#fff;
+    }
+    &.layui-btn-normal{
+        background:#009680;
+        color:#fff;
     }
 }

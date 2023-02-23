@@ -28,6 +28,7 @@ class Main:
         assets.url = self.app.static_url_path
         common_css = Bundle(
             'css/icon.scss',
+            'css/gride.scss',
             'css/index.scss',
             filters="pyscss",
             output="all.css"

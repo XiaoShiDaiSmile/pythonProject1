@@ -77,6 +77,9 @@ Menu.prototype = {
             $("[data-side-fold]").attr("data-side-fold",0).find("i").addClass("layui-icon-toggle-right").removeClass("layui-icon-toggle-left"),
                 $("body").addClass("layui-mini").removeClass("layui-all")
         );
+        that.renderTheme({
+            defaultBgColorId:1
+        })
         that.pullData();
         that.listen();
     },
@@ -340,6 +343,48 @@ Menu.prototype = {
                 scrollLeft:scrollLeft
         },300);
     },
+    renderTheme:function(op){
+        var that = this,
+            o = this.options;
+        var bgColorId = parseInt(sessionStorage.getItem("bgColor"));
+        if(isNaN(bgColorId)){
+            bgColorId=op.defaultBgColorId;
+        }
+        that.renderCssHtml(bgColorId);
+    },
+    renderCssHtml:function(bgColorId){
+        var that = this,
+            o = this.options;
+        if(bgColorId===undefined)return;
+        var configData = that.configData.config(bgColorId);
+        var style = '.layui-logo{'+
+            'background:'+configData.headerLogoColor+'!important;'
+        '}';
+        $("#layuistyle").empty().append(style);
+    },
+    configData:{
+        config:function(bgColorId){
+            var config = [
+                {
+                    headerLogoColor:'#182027',
+                    headerContentColor:"#fff",
+                    headerSideColor:"#28333e",
+                    headerBodyColor:"#ffff"
+                },
+                {
+                    headerLogoColor:'#55b878',
+                    headerContentColor:"#fff",
+                    headerSideColor:"#009680",
+                    headerBodyColor:"#ffff"
+                },
+            ]
+            if(bgColorId){
+                return config[bgColorId];
+            }else{
+                return config;
+            }
+        }
+    },
     listen:function(){
         var that = this,
             o = this.options;
@@ -490,7 +535,16 @@ Menu.prototype = {
         $("body").off("click",".layui-roll-right").on("click",".layui-roll-right",function(){
             that.rollClick("right")
         });
-
+        $("body").off("click","[data-bgcolor]").on("click","[data-bgcolor]",function(){
+                pop.render({
+                    type:1,
+                    title:"测试",
+                    area:"400",
+                    offset:'r',
+                    anim:1,
+                    shadeClose:true
+                })
+        })
 
 
     }
@@ -519,6 +573,32 @@ pop.msg = function(content,options){
         skin:'layui-layer-msg'
     },options));
 };
+pop.confirm = function(content,options,yes,cancel){
+    var that = this,
+        type = typeof options === "function";
+    if(type){
+        cancel = yes;
+        yes = options;
+    }
+    return pop.render($.extend({},{
+        content:content,
+        yes:yes,
+        cancel:cancel
+    },type?{}:options));
+};
+pop.tips = function(content,follow,options){
+    var that = this;
+    return pop.render($.extend({},{
+        type:4,
+        time:3000,
+        title:false,
+        btn:false,
+        closeBtn:false,
+        shade:false,
+        fixed:false,
+        content:[content,follow]
+    },options));
+};
 var Pop = function(options){
     var that = this;
     that.options = $.extend({},that.config,pop.config,options);
@@ -539,7 +619,7 @@ Pop.prototype = {
         btn:['确定','取消'],
         closeBtn:true,
         btnAlign:"right",
-        sahde:false,
+        shade:0.3,
         shadeClose:false,
         move:'.layui-layer-title',
         moveout:false,
@@ -557,6 +637,7 @@ Pop.prototype = {
         var that = this,
             o = this.options;
         that.render();
+        that.listen();
     },
     render:function(){
         var that = this,
@@ -603,6 +684,18 @@ Pop.prototype = {
         o.time<=0||setTimeout(function(){
             that.close(that.index);
         },o.time);
+        that.move().callback();
+    },
+    move:function(){
+        var that = this,
+            o = this.options;
+
+        return that;
+    },
+    callback:function(){
+        var that = this,
+            o = this.options;
+        o.end&&(that.ready.end[that.index] = o.end);
     },
     tips:function(){
         var that = this,
@@ -650,7 +743,7 @@ Pop.prototype = {
                 setHeight("iframe");
                 break;
             default:
-                if(o.area[0]===""){
+                if(o.area[1]===""){
                     if(o.maxheight>0&&o.area[1]>o.maxheight){
                         area[1] = o.maxheight;
                         setHeight(".layui-layer-content");
@@ -664,6 +757,7 @@ Pop.prototype = {
                 }else{
                     setHeight(".layui-layer-content");
                 }
+                break;
         }
     },
     vessel:function(conType,callback){
@@ -685,7 +779,7 @@ Pop.prototype = {
                 '</div>'+
                 '<div class="layui-layer-setwin">'+(function(){
                     var closebtn = ismax?'<div class="layui-layer-ico layui-layer-close"><i class="layui-icon layui-icon-close"></i></div>':'';
-                    o.closeBtn&&(closbtn+='<div class="layui-layer-ico layui-layer-close"><i class="layui-icon layui-icon-close"></i></div>');
+                    o.closeBtn&&(closebtn+='<div class="layui-layer-ico layui-layer-close"><i class="layui-icon layui-icon-close"></i></div>');
                     return closebtn;
             }())+'</div>'+
                 (o.btn?function(){
@@ -715,12 +809,47 @@ Pop.prototype = {
             layerdom = $("#layui-layer"+index+""),
             type = layerdom.attr("type"),
             remove = function(){
-
+                if(type&&type===that.ready.type[1]){
+                    layerdom.children(":not(.layui-layer-content)").remove();
+                    var wrap = layerdom.find(".layui-layer-wrap");
+                    for(var i=0;i<2;i++){
+                        wrap.unwrap();
+                    }
+                    wrap.css("display",wrap.data("display")).removeClass("layui-layer-wrap");
+                }else{
+                    layerdom[0].innerHTML = '';
+                    layerdom.remove();
+                }
+                typeof that.ready.end[that.index] === "function"&&that.ready.end[that.index](that.index,layerdom);
             };
         if(!layerdom[0])return;
         if(o.isOutAnimate){
             var animClass = 'layui-anim '+that.ready.anim[o.anim]+'-out';
             o.dom.addClass(animClass);
         }
+        $("#layui-layer-shade"+that.index+"").remove();
+        if(!o.isOutAnimate){
+            remove();
+        }else{
+            setTimeout(function(){
+                remove();
+            },300)
+        }
+    },
+    listen:function(){
+        var that = this,
+            o = this.options;
+        $(window).on("resize",function(){
+            o.type===4?that.tips():that.offset();
+        });
+        $("body").off("click","#layui-layer"+that.index+" .layui-layer-close").on("click","#layui-layer"+that.index+" .layui-layer-close",function(){
+            that.close(that.index);
+        });
+        o.shadeClose&&$("body").off("click","#layui-layer-shade"+that.index+"").on("click","#layui-layer-shade"+that.index+"",function(){
+            that.close(that.index);
+        });
+
+
     }
-}
+};
+
