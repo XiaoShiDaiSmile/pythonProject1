@@ -11,7 +11,7 @@ apis = Blueprint("apis",__name__)
 api = Api(apis)
 
 
-class file(Resource):
+class filesend(Resource):
     def __init__(self):
         self.parser = reqparse.RequestParser()
         self.parser.add_argument("file_name")
@@ -28,5 +28,5 @@ class file(Resource):
         pass
 
 
-api.add_resource(file,'/file')
+api.add_resource(filesend,'/filesend')
 

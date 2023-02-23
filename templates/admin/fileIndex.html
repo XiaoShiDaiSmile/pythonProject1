@@ -15,8 +15,26 @@
     <div class="main">
         <div class="layui-row layui-col-space1">
             <div class="layui-col-sx3">1</div>
-            <div class="layui-col-sx7">2</div>
+            <div class="layui-col-sx7">
+                <div id="filetable"></div>
+            </div>
         </div>
     </div>
+    <script>
+        table.render({
+            elem:"#filetable",
+            url:'/filesend',
+            cols:[[
+                {field:'',type:'checkbox'},
+                {field:'id',title:'编号',width:67},
+                {field:'file_name','title':'文件名称'},
+                {field:'file_type',title:'文件类型'},
+                {field:'file_size',title:'文件大小'},
+                {field:'file_path',title:'文件路径'},
+                {field:'remarks',title:'备注'},
+                {field:'operate',title:'操作'}
+            ]]
+        })
+    </script>
 </body>
 </html>

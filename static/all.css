@@ -1041,7 +1041,27 @@
                 overflow: hidden;
                 margin: 2px 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003256}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003254}}
+.bgColorElem ul li {
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 7px;
+  position: relative;
+  font-size: 0;
+  cursor: pointer; }
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003261}}
+  .bgColorElem ul li.layui-this:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    border: 1px solid #eee;
+    padding: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003281}}
 .layui-side {
   width: 200px;
   position: fixed;
@@ -1055,21 +1075,21 @@
   zoom: 1;
   overflow-x: hidden;
   transition: all 0.3s ease; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003268}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003293}}
   .layui-side .layui-nav {
     width: 100%;
     position: relative; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003270}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003295}}
     .layui-side .layui-nav.layui-show {
       display: block; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003273}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003298}}
       .layui-side .layui-nav.layui-hide {
         display: none; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003276}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003301}}
         .layui-side .layui-nav .layui-nav-item {
           width: 100%;
           position: relative; }
-          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003278}}
+          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003303}}
           .layui-side .layui-nav .layui-nav-item a {
             display: block;
             height: 40px;
@@ -1079,7 +1099,7 @@
             font-size: 0;
             padding: 0 19px;
             position: relative; }
-            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003286}}
+            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003311}}
             .layui-side .layui-nav .layui-nav-item a i:first-child {
               width: 20px;
               font-size: 17px;
@@ -1088,13 +1108,13 @@
               vertical-align: middle;
               color: #c5bbbb;
               margin-right: 7px; }
-              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003295}}
+              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003320}}
               .layui-side .layui-nav .layui-nav-item a span {
                 font-size: 14px;
                 color: #c5bbbb;
                 display: inline-block;
                 vertical-align: middle; }
-                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003301}}
+                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003326}}
                 .layui-side .layui-nav .layui-nav-item a i:last-child {
                   font-size: 14px;
                   color: #c5bbbb;
@@ -1104,42 +1124,42 @@
                   right: 22px;
                   transition: all 0.3s ease;
                   line-height: normal; }
-          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003313}}
+          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003338}}
           .layui-side .layui-nav .layui-nav-item .layui-nav-child {
             padding: 2px 0;
             background: #0c0f13;
             color: #fff;
             display: none; }
-            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003317}}
+            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003342}}
             .layui-side .layui-nav .layui-nav-item .layui-nav-child a {
               padding-left: 27px; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003324}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003349}}
     .layui-side .layui-nav .layui-this > a {
       background: #1e9fff;
       color: #fff; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003326}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003351}}
       .layui-side .layui-nav .layui-this > a i:first-child {
         color: #fff; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003329}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003354}}
         .layui-side .layui-nav .layui-this > a span {
           color: #fff; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003336}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003361}}
     .layui-side .layui-nav .layui-nav-itemed > .layui-nav-child {
       display: block; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003372}}
 @keyframes item {
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003347}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003372}}
   0% {
     transform: translateY(30px);
     opacity: 0.5;   }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003351}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003376}}
     100% {
       transform: translateY(0);
       opacity: 1;   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003382}}
 .layui-body {
   position: fixed;
   top: 60px;
@@ -1151,13 +1171,13 @@
   zoom: 1;
   font-size: 0;
   transition: all 0.3s ease; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003367}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003392}}
   .layui-body .layui-tab {
     position: relative;
     width: 100%;
     height: 100%;
     font-size: 0; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003371}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003396}}
     .layui-body .layui-tab .layui-tab-title {
       height: 36px;
       line-height: 36px;
@@ -1171,7 +1191,7 @@
       background: #fff;
       color: #acafb1;
       box-shadow: 0 2px 3px rgba(0, 0, 0, 0.02), 0 0 2px rgba(0, 0, 0, 0.03); }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003383}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003408}}
       .layui-body .layui-tab .layui-tab-title li {
         min-width: 67px;
         height: 36px;
@@ -1183,13 +1203,13 @@
         border-right: 1px solid #f5f5f5;
         display: inline-block;
         vertical-align: middle; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003393}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003418}}
         .layui-body .layui-tab .layui-tab-title li.layui-this .layui-tab-active {
           background: #1e9fff; }
-          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003396}}
+          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003421}}
           .layui-body .layui-tab .layui-tab-title li.layui-this span {
             color: #696969; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003401}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003426}}
         .layui-body .layui-tab .layui-tab-title li .layui-tab-active {
           width: 9px;
           height: 9px;
@@ -1198,14 +1218,14 @@
           background: #d3d3d3;
           border-radius: 100%;
           transition: all 0.3s ease; }
-          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003410}}
+          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003435}}
           .layui-body .layui-tab .layui-tab-title li span {
             font-size: 13px;
             color: #acafb1;
             display: inline-block;
             vertical-align: middle;
             margin: 0 7px; }
-            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003417}}
+            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003442}}
             .layui-body .layui-tab .layui-tab-title li .layui-tab-close {
               width: 14px;
               height: 14px;
@@ -1218,11 +1238,11 @@
               vertical-align: middle;
               cursor: pointer;
               transition: all 0.3s ease; }
-              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003428}}
+              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003453}}
               .layui-body .layui-tab .layui-tab-title li .layui-tab-close:hover {
                 background: #ff5057;
                 color: #fff; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003438}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003463}}
     .layui-body .layui-tab .layui-roll-left {
       width: 35px;
       height: 36px;
@@ -1238,10 +1258,10 @@
       cursor: pointer;
       z-index: 100;
       zoom: 1; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003452}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003477}}
       .layui-body .layui-tab .layui-roll-left:hover {
         color: #696969; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003457}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003482}}
     .layui-body .layui-tab .layui-roll-right {
       width: 35px;
       height: 36px;
@@ -1257,10 +1277,10 @@
       cursor: pointer;
       z-index: 100;
       zoom: 1; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003471}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003496}}
       .layui-body .layui-tab .layui-roll-right:hover {
         color: #696969; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003476}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003501}}
     .layui-body .layui-tab .layui-tab-tool {
       width: 35px;
       height: 36px;
@@ -1276,22 +1296,22 @@
       right: 0;
       z-index: 100;
       zoom: 1; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003490}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003515}}
       .layui-body .layui-tab .layui-tab-tool:hover {
         color: #696969; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003493}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003518}}
         .layui-body .layui-tab .layui-tab-tool .layui-nav {
           position: absolute;
           top: 0;
           left: 0;
           width: 100%;
           line-height: 39px; }
-          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003498}}
+          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003523}}
           .layui-body .layui-tab .layui-tab-tool .layui-nav .layui-nav-item {
             position: relative;
             line-height: 39px;
             font-size: 0; }
-            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003501}}
+            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003526}}
             .layui-body .layui-tab .layui-tab-tool .layui-nav .layui-nav-item .layui-nav-child {
               width: auto;
               height: auto;
@@ -1310,14 +1330,14 @@
               animation-duration: 0.3s;
               animation-fill-mode: both;
               display: none; }
-              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003518}}
+              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003543}}
               .layui-body .layui-tab .layui-tab-tool .layui-nav .layui-nav-item .layui-nav-child.layui-show {
                 display: block; }
-                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003521}}
+                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003546}}
                 .layui-body .layui-tab .layui-tab-tool .layui-nav .layui-nav-item .layui-nav-child dd {
                   position: relative;
                   font-size: 0; }
-                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003523}}
+                  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003548}}
                   .layui-body .layui-tab .layui-tab-tool .layui-nav .layui-nav-item .layui-nav-child dd a {
                     display: block;
                     height: 36px;
@@ -1328,35 +1348,35 @@
                     transition: all 0.3s ease;
                     font-size: 0;
                     white-space: nowrap; }
-                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003532}}
+                    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003557}}
                     .layui-body .layui-tab .layui-tab-tool .layui-nav .layui-nav-item .layui-nav-child dd a:hover {
                       background: #f6f6f6; }
-                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003535}}
+                      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003560}}
                       .layui-body .layui-tab .layui-tab-tool .layui-nav .layui-nav-item .layui-nav-child dd a i {
                         font-size: 15px;
                         display: inline-block;
                         vertical-align: middle;
                         color: rgba(107, 107, 107, 0.7); }
-                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003541}}
+                        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003566}}
                         .layui-body .layui-tab .layui-tab-tool .layui-nav .layui-nav-item .layui-nav-child dd a span {
                           font-size: 13px;
                           display: inline-block;
                           vertical-align: middle;
                           color: rgba(107, 107, 107, 0.7);
                           margin-left: 4px; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003560}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003585}}
     .layui-body .layui-tab .layui-tab-content {
       width: 100%;
       height: 96%;
       position: relative;
       font-size: 0; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003564}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003589}}
       .layui-body .layui-tab .layui-tab-content .layui-tab-body {
         width: 100%;
         height: 100%;
         position: relative;
         font-size: 0; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003568}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003593}}
         .layui-body .layui-tab .layui-tab-content .layui-tab-body .layui-tab-item {
           width: 100%;
           height: 100%;
@@ -1365,14 +1385,14 @@
           animation-name: item;
           animation-duration: 0.7s;
           animation-fill-mode: both; }
-          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003575}}
+          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003600}}
           .layui-body .layui-tab .layui-tab-content .layui-tab-body .layui-tab-item.layui-show {
             display: block; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003584}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003609}}
     .layui-body .layui-tab .layui-tab-mousedown {
       position: absolute;
       top: 0; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003586}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003611}}
       .layui-body .layui-tab .layui-tab-mousedown dl {
         width: auto;
         height: auto;
@@ -1385,10 +1405,10 @@
         zoom: 1;
         position: absolute;
         top: 39px; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003597}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003622}}
         .layui-body .layui-tab .layui-tab-mousedown dl dd {
           position: relative; }
-          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003598}}
+          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003623}}
           .layui-body .layui-tab .layui-tab-mousedown dl dd a {
             display: block;
             height: 36px;
@@ -1399,16 +1419,16 @@
             transition: all 0.3s ease;
             font-size: 0;
             white-space: nowrap; }
-            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003607}}
+            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003632}}
             .layui-body .layui-tab .layui-tab-mousedown dl dd a:hover {
               background: #f6f6f6; }
-              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003610}}
+              @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003635}}
               .layui-body .layui-tab .layui-tab-mousedown dl dd a i {
                 font-size: 15px;
                 display: inline-block;
                 vertical-align: middle;
                 color: rgba(107, 107, 107, 0.7); }
-                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003616}}
+                @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003641}}
                 .layui-body .layui-tab .layui-tab-mousedown dl dd a span {
                   font-size: 13px;
                   display: inline-block;
@@ -1416,121 +1436,121 @@
                   color: rgba(107, 107, 107, 0.7);
                   margin-left: 4px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003637}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003662}}
 .layui-mini .layui-logo {
   width: 60px; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003638}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003663}}
   .layui-mini .layui-logo h1 {
     display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003643}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003668}}
 .layui-mini .layui-header-content .layui-header-tool {
   left: 99px; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003646}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003671}}
   .layui-mini .layui-header-content .layui-header-menu {
     left: 157px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003651}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003676}}
 .layui-mini .layui-side {
   width: 60px; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003652}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003677}}
   .layui-mini .layui-side .layui-nav .layui-nav-item a i:first-child {
     margin-right: 79px; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003655}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003680}}
     .layui-mini .layui-side .layui-nav .layui-nav-item a i:last-child {
       display: none; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003658}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003683}}
       .layui-mini .layui-side .layui-nav .layui-nav-item a:hover i:first-child {
         color: #fff !important;
         transition: all 0.3s ease; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003668}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003693}}
   .layui-mini .layui-side .layui-nav .layui-nav-itemed .layui-nav-child {
     display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003677}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003702}}
 .layui-mini .layui-body {
   left: 60px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003684}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003709}}
 @keyframes anim00 {
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003684}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003709}}
   0% {
     transform: scale(0.7);
     opacity: 0.5;   }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003688}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003713}}
     100% {
       transform: scale(1);
       opacity: 1;   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003694}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003719}}
 .layui-anim-00 {
   animation-name: anim00;
   animation-duration: 0.3s;
   animation-fill-mode: both; }
 
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003699}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003724}}
   @keyframes anim00out {
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003699}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003724}}
     0% {
       transform: scale(0.7);   }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003702}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003727}}
       80% {
         transform: scale(1.01);
         opacity: 0.7;   }
-        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003706}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003731}}
         100% {
           transform: scale(0.7);
           opacity: 0;   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003712}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003737}}
 .layui-anim-00-out {
   animation-name: anim00out;
   animation-duration: 0.3s;
   animation-fill-mode: both; }
 
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003717}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003742}}
   @keyframes anim01 {
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003717}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003742}}
     0% {
       transform: translateX(100%);
       opacity: 0.5;   }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003721}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003746}}
       100% {
         transform: translateX(0);
         opacity: 1;   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003727}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003752}}
 .layui-anim-01 {
   animation-name: anim01;
   animation-duration: 0.3s;
   animation-fill-mode: both; }
 
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003732}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003757}}
   @keyframes anim01out {
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003732}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003757}}
     0% {
       transform: translateX(0);
       opacity: 1;   }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003736}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003761}}
       100% {
         transform: translateX(100%);
         opacity: 0;   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003742}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003767}}
 .layui-anim-01-out {
   animation-name: anim01out;
   animation-duration: 0.3s;
   animation-fill-mode: both; }
 
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003747}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003772}}
   .layui-layer-dialog {
     width: 320px;
     height: auto;
     background: #fff;
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003752}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003777}}
     .layui-layer-dialog.layui-layer-msg {
       line-height: 36px;
       padding: 0 9px;
@@ -1545,17 +1565,17 @@
       left: 0;
       background: rgba(0, 0, 0, 0.8);
       color: #fff; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003765}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003790}}
       .layui-layer-dialog.layui-layer-msg .layui-layer-content {
         padding: 0; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003770}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003795}}
     .layui-layer-dialog .layui-layer-content {
       padding: 22px 14px;
       box-sizing: border-box;
       color: #333;
       font-size: 14px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003778}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003803}}
 .layui-layer-title {
   height: 50px;
   line-height: 50px;
@@ -1567,7 +1587,7 @@
   background: #fff;
   box-sizing: border-box; }
 
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003789}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003814}}
   .layui-layer-btn {
     padding: 9px;
     font-size: 0;
@@ -1575,15 +1595,15 @@
     position: relative;
     border-top: 1px solid #eee;
     box-sizing: border-box; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003795}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003820}}
     .layui-layer-btn .layui-btn {
       background: #1e9fff;
       color: #fff; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003799}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003824}}
       .layui-layer-btn.layui-layer-btn-right {
         text-align: right; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003804}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003829}}
 .layui-layer-shade {
   position: fixed;
   top: 0;
@@ -1591,7 +1611,7 @@
   width: 100%;
   height: 100%; }
 
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003811}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003836}}
   .layui-layer-setwin {
     position: absolute;
     top: 15px;
@@ -1600,33 +1620,98 @@
     cursor: pointer;
     color: #333; }
 
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003819}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003844}}
     .layui-layer-page {
       background: #fff;
       border-radius: 2px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); }
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003847}}
+      .layui-layer-page .layui-layer-content {
+        padding: 14px;
+        box-sizing: border-box;
+        overflow: auto; }
 
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003826}}
-      .layui-btn {
-        height: 30px;
-        line-height: 30px;
-        font-size: 12px;
-        padding: 0 9px;
-        border: 1px solid transparent;
-        border-radius: 2px;
-        transition: all 0.3s ease;
-        display: inline-block;
-        vertical-align: middle;
-        cursor: pointer;
-        margin: 0 4px; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003837}}
-        .layui-btn:hover {
-          opacity: 0.8; }
-          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003840}}
-          .layui-btn.layui-btn-primary {
-            background: #1e9fff;
-            color: #fff; }
-            @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003844}}
-            .layui-btn.layui-btn-normal {
-              background: #009680;
-              color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003856}}
+.layui-btn {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  padding: 0 9px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 0 4px; }
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003867}}
+  .layui-btn:hover {
+    opacity: 0.8; }
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003870}}
+    .layui-btn.layui-btn-primary {
+      background: #1e9fff;
+      color: #fff; }
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003874}}
+      .layui-btn.layui-btn-normal {
+        background: #009680;
+        color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003882}}
+.layui-table-view {
+  margin: 14px 0;
+  position: relative;
+  border: 1px solid #eee;
+  font-size: 0;
+  box-sizing: border-box; }
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003887}}
+  .layui-table-view .layui-table-box {
+    position: relative;
+    font-size: 0;
+    overflow: hidden; }
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003890}}
+    .layui-table-view .layui-table-box .layui-table-header {
+      position: relative;
+      font-size: 0;
+      border-bottom: 1px solid #eee; }
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003893}}
+      .layui-table-view .layui-table-box .layui-table-header tr {
+        background: #fafafa; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003894}}
+        .layui-table-view .layui-table-box .layui-table-header tr th {
+          line-height: 36px;
+          border-top: none;
+          border-left: none;
+          border-right: 1px solid #eee;
+          box-sizing: border-box; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003899}}
+          .layui-table-view .layui-table-box .layui-table-header tr th .layui-table-cell {
+            line-height: 36px;
+            font-size: 13px;
+            font-weight: 400;
+            color: #333;
+            padding: 0 9px;
+            text-align: center;
+            box-sizing: border-box; }
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003914}}
+    .layui-table-view .layui-table-box .layui-table-body {
+      position: relative;
+      font-size: 0; }
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003916}}
+      .layui-table-view .layui-table-box .layui-table-body tr {
+        background: #fff; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003917}}
+        .layui-table-view .layui-table-box .layui-table-body tr td {
+          line-height: 36px;
+          border-top: none;
+          border-left: none;
+          border-right: 1px solid #eee;
+          box-sizing: border-box; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003922}}
+          .layui-table-view .layui-table-box .layui-table-body tr td .layui-table-cell {
+            line-height: 36px;
+            font-size: 13px;
+            font-weight: 400;
+            color: #333;
+            padding: 0 9px;
+            text-align: center;
+            box-sizing: border-box; }

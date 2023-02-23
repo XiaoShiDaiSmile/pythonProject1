@@ -367,15 +367,15 @@ Menu.prototype = {
             var config = [
                 {
                     headerLogoColor:'#182027',
-                    headerContentColor:"#fff",
-                    headerSideColor:"#28333e",
-                    headerBodyColor:"#ffff"
+                    headerContentColor:"#c3c3c3",
+                    sideColor:"#28333e",
+                    bodyColor:"#eee"
                 },
                 {
                     headerLogoColor:'#55b878',
-                    headerContentColor:"#fff",
-                    headerSideColor:"#009680",
-                    headerBodyColor:"#ffff"
+                    headerContentColor:"#acafb1",
+                    sideColor:"#009680",
+                    bodyColor:"#d2d2d2"
                 },
             ]
             if(bgColorId){
@@ -384,6 +384,33 @@ Menu.prototype = {
                 return config;
             }
         }
+    },
+    renderBgColorHtml:function(){
+        var that = this,
+            o = this.options;
+        var bgColorId = parseInt(sessionStorage.getItem("bgColor"));
+        if(isNaN(bgColorId)){
+            bgColorId = 0;
+        }
+        var configData = that.configData.config();
+        var html = "";
+        layui.each(configData,(item1,i1) => {
+            if(bgColorId===i1){
+                html += '<li class="layuiBgColorItem layui-this" data-select-bgcolor="'+i1+'">';
+            }else{
+                html += '<li class="layuiBgColorItem" data-select-bgcolor="'+i1+'">';
+            }
+            html += '<div>'+
+                '<span style="width:20%;height:14px;display:inline-block;vertical-align:middle;background:'+item1.headerLogoColor+';"></span>'+
+                '<span style="width:80%;height:14px;display:inline-block;vertical-align:middle;background:'+item1.headerContentColor+';"></span>'+
+            '</div>'+
+            '<div>'+
+                '<span style="width:20%;height:40px;display:inline-block;vertical-align:middle;background:'+item1.sideColor+';"></span>'+
+                '<span style="width:80%;height:40px;display:inline-block;vertical-align:middle;background:'+item1.bodyColor+';"></span>'+
+            '</div>'+
+            '</li>';
+        });
+        return html;
     },
     listen:function(){
         var that = this,
@@ -536,15 +563,35 @@ Menu.prototype = {
             that.rollClick("right")
         });
         $("body").off("click","[data-bgcolor]").on("click","[data-bgcolor]",function(){
+                var html = that.renderBgColorHtml();
+                $("#bgColorElem ul").empty().append(html);
                 pop.render({
                     type:1,
-                    title:"测试",
+                    title:"主题配置",
                     area:"400",
                     offset:'r',
                     anim:1,
-                    shadeClose:true
+                    shadeClose:true,
+                    content:$("#bgColorElem")
                 })
-        })
+        });
+        $("body").off("click","[data-select-bgcolor]").on("click","[data-select-bgcolor]",function(){
+             var othis = $(this);
+             sessionStorage.setItem("bgColor",parseInt(othis.attr("data-select-bgcolor")));
+             othis.addClass("layui-this").siblings().removeClass("layui-this");
+             that.renderCssHtml(parseInt(othis.attr("data-select-bgcolor")));
+        });
+        $("body").off("click","[data-check-screen]").on("click","[data-check-screen]",function(){
+            $(this).attr("data-check-screen")==="full"?(
+                $(this).attr("data-check-screen","exit").find("i").addClass("layui-icon-fullscreen-shrink").removeClass("layui-icon-fullscreen-expand"),
+                that.fullScreen()
+            ):(
+                $(this).attr("data-check-screen","full").find("i").addClass("layui-icon-fullscreen-expand").removeClass("layui-icon-fullscreen-shrink"),
+                that.exitFullScreen()
+            )
+        });
+
+
 
 
     }
@@ -772,10 +819,10 @@ Pop.prototype = {
             '<div class="layui-layer layui-layer-'+that.ready.type[o.type]+' '+(o.skin?o.skin:'')+'" id="layui-layer'+that.index+'" times="'+that.index+'" type="'+that.ready.type[o.type]+'" conType="'+(conType?"object":"string")+'" style="width:'+o.area[0]+'px;height:'+o.area[1]+';z-index:'+zIndex+';position:'+
             (o.fixed?"fixed":'absolute')+
             ';">'+
-                (conType&&o.type===2?'':titleHtml)+
+                (conType&&o.type===1?'':titleHtml)+
                 '<div class="layui-layer-content" id="'+o.elem+'">'+
                     (o.type===0&&o.icon!==-1?'<i class="layui-icon layui-icon-'+o.icon+'"></i>':'')+
-                    (conType&&o.type===2?'':(o.content||''))+
+                    (conType&&o.type===1?'':(o.content||''))+
                 '</div>'+
                 '<div class="layui-layer-setwin">'+(function(){
                     var closebtn = ismax?'<div class="layui-layer-ico layui-layer-close"><i class="layui-icon layui-icon-close"></i></div>':'';
@@ -852,4 +899,305 @@ Pop.prototype = {
 
     }
 };
+
+//表格组件脚本
+var table = {
+    v:'1.0.0',
+    config:{},
+    index:0,
+    cache:[]
+};
+table.render = function(options){
+    var inst = new Table(options);
+    return layui.call(inst);
+};
+var Table = function(options){
+    var that = this;
+    that.options = $.extend({},that.config,table.config,options);
+    that.index = ++table.index;
+    that.id = options&&("id" in options)?options.id:that.index;
+    that.init();
+};
+Table.prototype = {
+    constructor:table,
+    config:{
+        curr:1,
+        limit:5,
+        loading:true,
+        prev:'<i class="layui-icon layui-icon-arrow-left-bold"></i>',
+        next:'<i class="layui-icon layui-icon-arrow-right-bold"></i>',
+        text:{
+            none:'暂无数据!'
+        }
+    },
+    init:function(){
+        var that = this,
+            o = this.options;
+        that.renderBox();
+        that.pullData();
+        that.listen();
+    },
+    render:function(data,curr,limit){
+        var that = this,
+            o = this.options;
+        o.count = data.length;
+        o.startcurr = data*limit-limit;
+        o.datalist = data.concat().splice(o.startcurr,limit);
+        table.cache[that.index] = o.datalist;
+        that.setKey();
+        that.renderTheadHtml();
+        that.renderTbodyHtml();
+        that.setAutoWidth();
+    },
+    setAutoWidth:function(){
+        var that = this,
+            o = this.options,
+            colnum = 0,
+            autonum = 0,
+            autowidth = 0,
+            curwidth = o.el.width(),
+            countwidth = 0,
+            minwidth = o.minwidth||47;
+        layui.each(o.cols,(item1,i1) => {
+            layui.each(item1,(item2,i2) =>{
+                if(item2.hide)return;
+                colnum++;
+            })
+        });
+        curwidth = curwidth-function(){
+            return o.skin==='line'?2:colnum+2;
+        }();
+        var setDefaultWidth = function(back){
+            if(!back){
+                var width = 0;
+                layui.each(o.cols,(item1,i1) => {
+                    layui.each(item1,(item2,i2) =>{
+                        if(!item2.width&&item2.type!=="checkbox"){
+                            item2.width = width = 0;
+                            autonum++;
+                        }else if(item2.type === "checkbox"){
+                            item2.width = width = item2.width||49;
+                        }else{
+                            width = item2.width;
+                        }
+                        countwidth = countwidth+width;
+                    })
+                });
+                countwidth<curwidth&&autonum&&(
+                    autowidth = (curwidth-countwidth)/autonum
+                )
+            }
+        };
+        setDefaultWidth();
+        layui.each(o.cols,(item1,i1) => {
+              layui.each(item1,(item2,i2) =>{
+                  if(!item2.width&&item2.type!=="checkbox"){
+                            $(".layui-table-cell-"+that.index+"-"+item2.key+"").css({'width':autowidth<minwidth?minwidth:autowidth+'px'});
+                        }else if(item2.type === "checkbox"){
+                            $(".layui-table-cell-"+that.index+"-"+item2.key+"").css({'width':item2.width+'px'});
+                        }else{
+                           $(".layui-table-cell-"+that.index+"-"+item2.key+"").css({'width':item2.width+'px'});
+                        }
+                    })
+                });
+    },
+    renderTbodyHtml:function(){
+        var that = this,
+            o = this.options,
+            tbodytr = [],
+            tbodytr_fixed = [],
+            tbodytr_fixed_r = [];
+        layui.each(o.datalist,(item1,i1) => {
+            var tbodytd = [],
+                tbodytd_fixed =[],
+                tbodytd_fixed_r = [];
+            layui.each(o.cols,(item2,i2) => {
+                layui.each(item2,(item3,i3) =>{
+                    var field = item3.field,
+                        content = item1[field];
+                    var td = '<td data-field="'+item3.field+'" data-key="'+that.index+'-'+item3.key+'">'+
+                        '<div class="layui-table-cell layui-table-cell-'+that.index+'-'+item3.key+''+
+                        (item3.type==="checkbox"?" layui-cell-checkbox":'')+
+                        '">'+(function(){
+                            var tplData = $.extend({},{
+
+                            },item1);
+                            switch(item3.type){
+                                case "checkbox":
+                                    return '<input type="checkbox" name="layuiTableCheckbox" '+
+                                        (tplData.isShow?' checked':'')+
+                                    '/>';
+                                    break;
+                            }
+                            if(item3.toolbar){
+                                return item3.toolbar(tplData);
+                            }
+                            return item3.template?function(){
+                                if(typeof item3.template === "function"){
+                                    return item3.template(tplData);
+                                }
+                            }():function(){
+                                if(content===undefined||content === null){
+                                    return '<i class="layui-icon layui-icon-file"></i>';
+                                }
+                                return content;
+                            }();
+                        }())+'</div>'+
+                    '</td>';
+                    tbodytd.push(td);
+                    if(item3.fixed&&item3.fixed !== "right")tbodytd_fixed.push(td);
+                    if(item3.fixed==="right")tbodytd_fixed_r.push(td);
+                });
+            });
+            tbodytd.length>0&&tbodytr.push('<tr data-index="'+i1+'">'+tbodytd.join("")+'</tr>');
+            tbodytd_fixed.length>0&&tbodytr_fixed.push('<tr data-index="'+i1+'">'+tbodytd_fixed.join("")+'</tr>');
+            tbodytd_fixed_r.length>0&&tbodytr_fixed_r.push('<tr data-index="'+i1+'">'+tbodytd_fixed_r.join("")+'</tr>');
+        });
+        $("#layui-table"+that.index+"").find(".layui-table-main tbody").empty().append(tbodytr.join(""));
+        $("#layui-table"+that.index+"").find(".layui-table-fixed-l .layui-table-body tbody").empty().append(tbodytr_fixed.join(""));
+        $("#layui-table"+that.index+"").find(".layui-table-fixed-r .layui-table-body tbody").empty().append(tbodytr_fixed_r.join(""));
+    },
+    renderTheadHtml:function(){
+        var that = this,
+            o = this.options,
+            theadtr = [],
+            theadtr_fixed = [],
+            theadtr_fixed_r = [];
+        layui.each(o.cols,(item1,i1) => {
+            var theadth = [],
+                theadth_fixed = [],
+                theadth_fixed_r = [];
+            layui.each(item1,(item2,i2) =>{
+                var th = '<th data-field="'+item2.field+'" data-key="'+that.index+'-'+item2.key+'">'+
+                    '<div class="layui-table-cell layui-table-cell-'+that.index+'-'+item2.key+''+
+                    (item2.type === "checkbox"?' layui-cell-checkbox':'')+
+                    '">'+(function(){
+                        switch(item2.type){
+                            case "checkbox":
+                                return '<input type="checkbox" name="layuiTableCheckbox" lay-filter="layuiTableAllChoose"/>';
+                                break;
+                        }
+                        return item2.title;
+                    }())+'</div>'+
+                '</th>';
+                theadth.push(th);
+                if(item2.fixed&&item2.fixed!=="right")theadth_fixed.push(th);
+                if(item2.fixed==="right")theadth_fixed_r.push(th);
+            });
+            theadth.length>0&&theadtr.push('<tr data-index="'+i1+'">'+theadth.join("")+'</tr>');
+            theadth_fixed.length>0&&theadtr_fixed.push('<tr data-index="'+i1+'">'+theadth_fixed.join("")+'</tr>');
+            theadth_fixed_r.length>0&&theadtr_fixed_r.push('<tr data-index="'+i1+'">'+theadth_fixed_r.join("")+'</tr>');
+        });
+        $("#layui-table"+that.index+"").find(".layui-table-header-d thead").empty().append(theadtr.join(""));
+        $("#layui-table"+that.index+"").find(".layui-table-fixed-l .layui-table-header thead").empty().append(theadtr_fixed.join(""));
+        $("#layui-table"+that.index+"").find(".layui-table-fixed-r .layui-table-header thead").empty().append(theadtr_fixed_r.join(""));
+    },
+    setKey:function(){
+        var that = this,
+            o = this.options;
+        layui.each(o.cols,(item1,i1) => {
+            layui.each(item1,(item2,i2) =>{
+                item2.key = i1+'-'+i2;
+                item2.hide = item2.hide||false;
+            })
+        })
+    },
+    pullData:function(){
+        var that = this,
+            o = this.options;
+        o.request = $.extend({},{
+            pageName:'curr',
+            limitName:'limit'
+        },o.request);
+        o.response = $.extend({},{
+            codeName:'code',
+            codeStatus:0,
+            dataName:'data',
+            dataType:'json',
+            totalRowName:'totalRow',
+            countName:'count'
+        },o.response);
+        if(o.url){
+            var params = {};
+            params[o.request.pageName] = o.curr;
+            params[o.request.limitName] = o.limit;
+            var data = $.extend(params,o.where);
+            if(o.contentType&&o.contentType.indexOf("application/json")===0){
+                data = JSON.stringify(data);
+            }
+            $.ajax({
+                url:o.url,
+                type:o.method||"get",
+                data:data,
+                dataType:'json',
+                contentType:o.contentType,
+                headers:o.headers||{},
+                success:function(res){
+                    o.data = res.data?res.data:[];
+                    that.render(o.data,o.curr,o.limit);
+                }
+            })
+        }else if(layui._typeOf(o.data)==="array"){
+            o.data = o.data?o.data:[];
+            that.render(o.data,o.curr,o.limit);
+        }
+    },
+    renderBox:function(){
+        var that = this,
+            o = this.options,
+            hasRender = $(o.elem).next(".layui-table-view");
+        hasRender[0]&&hasRender.remove();
+        var html = '<div class="layui-form layui-border-box layui-table-view" id="layui-table'+that.index+'">'+
+            '<div class="layui-table-box">'+
+                '<div class="layui-table-header layui-table-header-d">'+
+                    '<table class="layui-table" cellpadding="0" cellspacing="0" border="0">'+
+                        '<thead></thead>'+
+                    '</table>'+
+                '</div>'+
+                '<div class="layui-table-body layui-table-main">'+
+                    '<table class="layui-table" cellpadding="0" cellspacing="0" border="0">'+
+                        '<tbody></tbody>'+
+                    '</table>'+
+                '</div>'+
+                '<div class="layui-table-fixed layui-table-fixed-l">'+
+                    '<div class="layui-table-header">'+
+                        '<table class="layui-table" cellpadding="0" cellspacing="0" border="0">'+
+                            '<thead></thead>'+
+                        '</table>'+
+                    '</div>'+
+                    '<div class="layui-table-body">'+
+                        '<table class="layui-table" cellpadding="0" cellspacing="0" border="0">'+
+                            '<tbody></tbody>'+
+                        '</table>'+
+                    '</div>'+
+                '</div>'+
+                '<div class="layui-table-fixed layui-table-fixed-r">'+
+                    '<div class="layui-table-header">'+
+                        '<table class="layui-table" cellpadding="0" cellspacing="0" border="0">'+
+                            '<thead></thead>'+
+                        '</table>'+
+                    '</div>'+
+                    '<div class="layui-table-body">'+
+                        '<table class="layui-table" cellpadding="0" cellspacing="0" border="0">'+
+                            '<tbody></tbody>'+
+                        '</table>'+
+                    '</div>'+
+                '</div>'+
+            '</div>'+
+            '<div class="layui-table-page">'+
+                '<div id="layui-table-page'+that.index+'"></div>'+
+            '</div>'+
+        '</div>';
+        $(o.elem).after(html);
+        o.dom = $("#layui-table"+that.index+"");
+        o.el = $(o.elem);
+    },
+    listen:function(){
+        var that = this,
+            o = this.options;
+        $(window).on("resize",function(){
+            that.setAutoWidth();
+        })
+    }
+}
 

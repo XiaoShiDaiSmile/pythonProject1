@@ -251,6 +251,31 @@ body{
     }
     }
 }
+.bgColorElem{
+    ul{
+        li{
+            width:25%;
+            display:inline-block;
+            vertical-align:middle;
+            margin:7px;
+            position:relative;
+            font-size:0;
+            cursor:pointer;
+            &.layui-this{
+                &:before{
+                    content:"";
+                    width:100%;
+                    height:100%;
+                    position:absolute;
+                    top:-5px;
+                    left:-5px;
+                    border:1px solid #eee;
+                    padding:5px;
+                }
+            }
+        }
+    }
+}
 
 //左侧框架样式
 .layui-side{
@@ -820,6 +845,11 @@ body{
     background:#fff;
     border-radius:2px;
     box-shadow:0 2px 4px rgba(0,0,0,0.04);
+    .layui-layer-content{
+        padding:14px;
+        box-sizing:border-box;
+        overflow:auto;
+    }
 }
 
 //表单组件样式
@@ -845,5 +875,66 @@ body{
     &.layui-btn-normal{
         background:#009680;
         color:#fff;
+    }
+}
+
+//表格组件样式
+.layui-table-view{
+    margin:14px 0;
+    position:relative;
+    border:1px solid #eee;
+    font-size:0;
+    box-sizing:border-box;
+    .layui-table-box{
+        position:relative;
+        font-size:0;
+        overflow:hidden;
+        .layui-table-header{
+            position:relative;
+            font-size:0;
+            border-bottom:1px solid #eee;
+            tr{
+                background:#fafafa;
+                th{
+                    line-height:36px;
+                    border-top:none;
+                    border-left:none;
+                    border-right:1px solid #eee;
+                    box-sizing:border-box;
+                    .layui-table-cell{
+                        line-height:36px;
+                        font-size:13px;
+                        font-weight:400;
+                        color:#333;
+                        padding:0 9px;
+                        text-align:center;
+                        box-sizing:border-box;
+                    }
+                }
+            }
+        }
+        .layui-table-body{
+            position:relative;
+            font-size:0;
+            tr{
+                background:#fff;
+                td{
+                    line-height:36px;
+                    border-top:none;
+                    border-left:none;
+                    border-right:1px solid #eee;
+                    box-sizing:border-box;
+                    .layui-table-cell{
+                        line-height:36px;
+                        font-size:13px;
+                        font-weight:400;
+                        color:#333;
+                        padding:0 9px;
+                        text-align:center;
+                        box-sizing:border-box;
+                    }
+                }
+            }
+        }
     }
 }
