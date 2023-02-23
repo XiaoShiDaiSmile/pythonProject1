@@ -1050,8 +1050,8 @@ Table.prototype = {
                 });
             });
             tbodytd.length>0&&tbodytr.push('<tr data-index="'+i1+'">'+tbodytd.join("")+'</tr>');
-            tbodytd_fixed.length>0&&tbodytr_fixed.push('<tr data-index="'+i1+'">'+tbodytd_fixed.join("")+'</tr>');
-            tbodytd_fixed_r.length>0&&tbodytr_fixed_r.push('<tr data-index="'+i1+'">'+tbodytd_fixed_r.join("")+'</tr>');
+            tbodytd_fixed.length>0?(tbodytr_fixed.push('<tr data-index="'+i1+'">'+tbodytd_fixed.join("")+'</tr>')):($("#layui-table"+that.index+"").find(".layui-table-fixed-l").remove());
+            tbodytd_fixed_r.length>0?(tbodytr_fixed_r.push('<tr data-index="'+i1+'">'+tbodytd_fixed_r.join("")+'</tr>')):($("#layui-table"+that.index+"").find(".layui-table-fixed-r").remove());
         });
         $("#layui-table"+that.index+"").find(".layui-table-main tbody").empty().append(tbodytr.join(""));
         $("#layui-table"+that.index+"").find(".layui-table-fixed-l .layui-table-body tbody").empty().append(tbodytr_fixed.join(""));
