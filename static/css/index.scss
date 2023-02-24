@@ -877,6 +877,52 @@ body{
         color:#fff;
     }
 }
+.layui-input{
+    width:100%;
+    height:38px;
+    line-height:1.3;
+    display:block;
+    background:#fff;
+    color:#333;
+    font-size:13px;
+    border:1px solid #eee;
+    border-radius:2px;
+    outline:none;
+    transition:all .3s ease;
+    padding:0 9px;
+    box-sizing:border-box;
+    &:focus{
+        border-color:#d2d2d2;
+    }
+}
+.layui-form{
+    label{
+        line-height:36px;
+        font-size:13px;
+        color:#696969;
+        padding:0 4px;
+    }
+}
+.layui-form-select{
+    position:relative;
+    .layui-select-title{
+        .layui-input{
+            padding-right:22px;
+        }
+        i{
+            font-size:14px;
+            position:absolute;
+            top:50%;
+            margin-top:-7px;
+            right:22px;
+            color:#333;
+        }
+    }
+    .layui-anim-upbit{
+        position:absolute;
+        top:43px;
+    }
+}
 
 //表格组件样式
 .layui-table-view{
@@ -933,6 +979,37 @@ body{
                         text-align:center;
                         box-sizing:border-box;
                     }
+                }
+            }
+        }
+    }
+    .layui-table-tool{
+        padding:9px;
+        font-size:0;
+        border-bottom:1px solid #eee;
+        box-sizing:border-box;
+        position:relative;
+        .layui-table-tool-temp{
+            position:relative;
+            display:inline-block;
+            vertical-align:middle;
+            font-size:0;
+            .layui-table-inline{
+                line-height:25px;
+                padding:0 7px;
+                text-align:center;
+                display:inline-block;
+                vertical-align:middle;
+                margin:0 4px;
+                cursor:pointer;
+                transition:all .3s ease;
+                border-radius:2px;
+                border:none;
+                background:#1e9fff;
+                color:#fff;
+                font-size:13px;
+                &:hover{
+                    opacity:0.8;
                 }
             }
         }

@@ -10,6 +10,7 @@ var layui = function(){
 };
 layui.that = {};
 layui.config = {};
+layui.events = {};
 layui.each = function(obj,fn){
     var that = this,
         key,
@@ -45,6 +46,31 @@ layui._typeOf = function(operand){
             type = type[1] || "object";
             return new RegExp('\\b('+classType+')\\b').test(type)?type.toLowerCase():"object";
     }():typeof operand;
+};
+layui.onevent = function(modName,events,callback){
+    var that = this;
+    if(typeof modName !== "string"||typeof callback!=="function")return that;
+    layui.event(modName,events,null,callback);
+};
+layui.event = function(modName,events,params,fn){
+    var that = this,
+        res = null,
+        filter = (events||'').match(/\((.*)\)$/),
+        eventName = (modName+'.'+events).replace(filter[0],''),
+        filterName = filter[1]||'',
+        callback = function(item){
+            var res = item && item.call(that,params);
+        };
+    if(fn){
+        layui.events[eventName] = layui.events[eventName]||{};
+        layui.events[eventName][filterName] = [fn];
+        return that;
+    };
+    layui.each(layui.events[eventName],(item1,i1) =>{
+        filterName===i1&&layui.each(item1,(item2,i2) => {
+            callback(item2);
+        })
+    })
 };
 var _BODY = $("body"),
 _DOC = $(document),
@@ -816,7 +842,7 @@ Pop.prototype = {
             ismax = o.ismax&&(o.type===2||o.type===4);
         callback([
             o.shade?'<div class="layui-layer-shade" id="layui-layer-shade'+that.index+'" style="background:rgb(0,0,0);z-index:'+(zIndex-1)+';opacity:'+o.shade+';"></div>':'',
-            '<div class="layui-layer layui-layer-'+that.ready.type[o.type]+' '+(o.skin?o.skin:'')+'" id="layui-layer'+that.index+'" times="'+that.index+'" type="'+that.ready.type[o.type]+'" conType="'+(conType?"object":"string")+'" style="width:'+o.area[0]+'px;height:'+o.area[1]+';z-index:'+zIndex+';position:'+
+            '<div class="layui-layer layui-layer-'+that.ready.type[o.type]+' '+(o.skin?o.skin:'')+'" id="layui-layer'+that.index+'" times="'+that.index+'" type="'+that.ready.type[o.type]+'" conType="'+(conType?"object":"string")+'" style="width:'+o.area[0]+'px;height:'+o.area[1]+'px;z-index:'+zIndex+';position:'+
             (o.fixed?"fixed":'absolute')+
             ';">'+
                 (conType&&o.type===1?'':titleHtml)+
@@ -911,6 +937,10 @@ table.render = function(options){
     var inst = new Table(options);
     return layui.call(inst);
 };
+table.on = function(events,callback){
+    var that = this;
+    layui.onevent('table',events,callback);
+};
 var Table = function(options){
     var that = this;
     that.options = $.extend({},that.config,table.config,options);
@@ -934,8 +964,23 @@ Table.prototype = {
         var that = this,
             o = this.options;
         that.renderBox();
+        that.renderToolbar();
         that.pullData();
         that.listen();
+    },
+    renderToolbar:function(){
+        var that = this,
+            o = this.options;
+        var leftDefaultHtml = [
+            '<div class="layui-table-inline" lay-event="add"><i class="layui-icon layui-icon-add"></i></div>',
+            '<div class="layui-table-inline" lay-event="edit"><i class="layui-icon layui-icon-edit"></i></div>',
+            '<div class="layui-table-inline" lay-event="delete"><i class="layui-icon layui-icon-delete"></i></div>'
+        ].join("");
+        if(o.toolbar==="default"){
+            $("#layui-table"+that.index+"").find(".layui-table-tool-temp").empty().append(leftDefaultHtml);
+        }else if(typeof o.toolbar === "function"){
+            $("#layui-table"+that.index+"").find(".layui-table-tool-temp").empty().append(o.toolbar(o));
+        }
     },
     render:function(data,curr,limit){
         var that = this,
@@ -948,6 +993,7 @@ Table.prototype = {
         that.renderTheadHtml();
         that.renderTbodyHtml();
         that.setAutoWidth();
+        form.render();
     },
     setAutoWidth:function(){
         var that = this,
@@ -1148,6 +1194,10 @@ Table.prototype = {
             hasRender = $(o.elem).next(".layui-table-view");
         hasRender[0]&&hasRender.remove();
         var html = '<div class="layui-form layui-border-box layui-table-view" id="layui-table'+that.index+'">'+
+            (o.toolbar?'<div class="layui-table-tool">'+
+                '<div class="layui-table-tool-temp"></div>'+
+                '<div class="layui-table-tool-left"></div>'+
+            '</div>':'')+
             '<div class="layui-table-box">'+
                 '<div class="layui-table-header layui-table-header-d">'+
                     '<table class="layui-table" cellpadding="0" cellspacing="0" border="0">'+
@@ -1197,7 +1247,108 @@ Table.prototype = {
             o = this.options;
         $(window).on("resize",function(){
             that.setAutoWidth();
-        })
+        });
+        $("body").off("click","#layui-table"+that.index+" *[lay-event]").on("click","#layui-table"+that.index+" *[lay-event]",function(){
+            var othis = $(this),
+                filter = o.el.attr("lay-filter");
+            layui.event('table','toolbar('+filter+')',$.extend({},{
+                event:othis.attr("lay-event")
+            }))
+        });
+
+
+    }
+};
+
+//表单组件脚本
+var form = {
+    v:'1.0.0',
+    config:{},
+    index:0
+};
+form.render = function(options){
+    var inst = new Form(options?options:{});
+    return layui.call(inst);
+};
+var Form = function(options){
+    var that = this;
+    that.options = $.extend({},that.config,form.config,options);
+    that.index = ++form.index;
+    that.id = options&&("id" in options)?options.id:that.index;
+    that.init();
+};
+Form.prototype = {
+    constructor:form,
+    config:{
+
+    },
+    init:function(){
+        var that = this,
+            o = this.options;
+        that.render();
+    },
+    render:function(){
+        var that = this,
+            o = this.options,
+            elemForm = $(".layui-form"+function(){
+                return o.filter?'[lay-filter="'+o.filter+'"]':'';
+            }()),
+            items = {
+                input:function(){
+
+                },
+                checkbox:function(){
+                    //console.log("checkbox")
+                },
+                select:function(){
+                    var selects = elemForm.find("select");
+
+                    selects.each((index,select) => {
+                        var othis = $(select),
+                            disabled = select.disabled,
+                            value = select.value,
+                            selected = $(select.options[select.selectedIndex]),
+                            optionfirst = select.options[0],
+                            tips = "请选择",
+                            isSearch = typeof othis.attr("lay-search")==="string",
+                            placeholder = optionfirst?(optionfirst.value?(optionfirst.innerHTML||tips):tips):tips,
+                            hasRender = othis.next(".layui-form-select");
+                        var reElem = $(['<div class="layui-form-select '+
+                            (isSearch?' layui-form-unselect':'')+
+                            (disabled?' layui-form-disabled':'')+
+                        '">'+
+                            '<div class="layui-select-title">'+
+                                '<input type="text" class="layui-input '+
+                                    (isSearch?' layui-form-unselect':'')+
+                                    (disabled?' layui-form-disabled':'')+
+                                '" placeholder="'+$.trim(placeholder)+'" value="'+(value?$.trim(selected.html()):'')+'" '+
+                                    ((!disabled&&isSearch)?'':' readonly')+
+                                '/>'+
+                                '<i class="layui-icon layui-icon-arrow-down-bold"></i>'+
+                            '</div>'+
+                            '<dl class="layui-anim layui-anim-upbit">'+(function(options){
+                                var html = [];
+                                options.each((index,item) => {
+                                    if(index===0&&!item.value){
+                                        html.push('<dd class="layui-select-tips" lay-value="">'+$.trim(item.innerHTML||tips)+'</dd>');
+                                    }else{
+                                        html.push('<dd class="'+(item.value===value?'layu-this':'')+'" lay-value="'+item.value+'">'+$.trim(item.innerHTML)+'</dd>');
+                                    }
+                                })
+                                html.length<0&&html.push('<dd class="layui-select-none">暂无数据</dd>');
+                                return html.join("");
+                            }(othis.find("*")))+'</dl>'+
+                        '</div>'].join(""));
+                        hasRender[0]&&hasRender.remove();
+                        othis.after(reElem);
+                           // console.log(selected)
+                    })
+
+                }
+            };
+            o.type?items[o.type]():layui.each(items,(item1,i1) => {
+                item1();
+            });
     }
 }
 

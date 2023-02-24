@@ -16,7 +16,25 @@
         <div class="layui-row layui-col-space1">
             <div class="layui-col-sx3">1</div>
             <div class="layui-col-sx7">
-                <div id="filetable"></div>
+                <div id="filetable" lay-filter="file"></div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-form" id="fileform" style="display:none;">
+        <div class="layui-row layui-col-space1">
+            <div class="layui-col-sx4">
+                <label for="file_name">文件名称</label>
+                <input type="text" name="file_name" class="layui-input" placeholder="文件名称"/>
+            </div>
+            <div class="layui-col-sx4">
+                <label for="file_type">文件类型</label>
+                <select name="file_type" id="file_type">
+                    <option value="">请选择</option>
+                    <option value="1">png</option>
+                    <option value="2">jpg</option>
+                    <option value="1">gif</option>
+                    <option value="1">doc</option>
+                </select>
             </div>
         </div>
     </div>
@@ -24,6 +42,7 @@
         table.render({
             elem:"#filetable",
             url:'/filesend',
+            toolbar:"default",
             cols:[[
                 {field:'',type:'checkbox'},
                 {field:'id',title:'编号',width:67},
@@ -34,6 +53,25 @@
                 {field:'remarks',title:'备注'},
                 {field:'operate',title:'操作'}
             ]]
+        });
+        form.render();
+        table.on('toolbar(file)',function(res){
+            switch(res.event){
+                case "add":
+                    parent.fileform = $("#fileform").clone(true);
+                    parent.fileform.addClass("fileform1");
+                    parent.body.append(parent.fileform);
+                    parent.pop.render({
+                        type:1,
+                        title:"新增",
+                        area:["500","400"],
+                        content:parent.fileform,
+                        end:function(){
+                            parent.fileform.remove();
+                        }
+                    })
+                    break;
+            }
         })
     </script>
 </body>

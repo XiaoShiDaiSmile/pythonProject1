@@ -1656,34 +1656,79 @@
         background: #009680;
         color: #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003882}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003880}}
+.layui-input {
+  width: 100%;
+  height: 38px;
+  line-height: 1.3;
+  display: block;
+  background: #fff;
+  color: #333;
+  font-size: 13px;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  outline: none;
+  transition: all 0.3s ease;
+  padding: 0 9px;
+  box-sizing: border-box; }
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003893}}
+  .layui-input:focus {
+    border-color: #d2d2d2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003898}}
+.layui-form label {
+  line-height: 36px;
+  font-size: 13px;
+  color: #696969;
+  padding: 0 4px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003906}}
+.layui-form-select {
+  position: relative; }
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003907}}
+  .layui-form-select .layui-select-title .layui-input {
+    padding-right: 22px; }
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003910}}
+    .layui-form-select .layui-select-title i {
+      font-size: 14px;
+      position: absolute;
+      top: 50%;
+      margin-top: -7px;
+      right: 22px;
+      color: #333; }
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003920}}
+  .layui-form-select .layui-anim-upbit {
+    position: absolute;
+    top: 43px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003928}}
 .layui-table-view {
   margin: 14px 0;
   position: relative;
   border: 1px solid #eee;
   font-size: 0;
   box-sizing: border-box; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003887}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003933}}
   .layui-table-view .layui-table-box {
     position: relative;
     font-size: 0;
     overflow: hidden; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003890}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003936}}
     .layui-table-view .layui-table-box .layui-table-header {
       position: relative;
       font-size: 0;
       border-bottom: 1px solid #eee; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003893}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003939}}
       .layui-table-view .layui-table-box .layui-table-header tr {
         background: #fafafa; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003894}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003940}}
         .layui-table-view .layui-table-box .layui-table-header tr th {
           line-height: 36px;
           border-top: none;
           border-left: none;
           border-right: 1px solid #eee;
           box-sizing: border-box; }
-          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003899}}
+          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003945}}
           .layui-table-view .layui-table-box .layui-table-header tr th .layui-table-cell {
             line-height: 36px;
             font-size: 13px;
@@ -1692,21 +1737,21 @@
             padding: 0 9px;
             text-align: center;
             box-sizing: border-box; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003914}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003960}}
     .layui-table-view .layui-table-box .layui-table-body {
       position: relative;
       font-size: 0; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003916}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003962}}
       .layui-table-view .layui-table-box .layui-table-body tr {
         background: #fff; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003917}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003963}}
         .layui-table-view .layui-table-box .layui-table-body tr td {
           line-height: 36px;
           border-top: none;
           border-left: none;
           border-right: 1px solid #eee;
           box-sizing: border-box; }
-          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003922}}
+          @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003968}}
           .layui-table-view .layui-table-box .layui-table-body tr td .layui-table-cell {
             line-height: 36px;
             font-size: 13px;
@@ -1715,3 +1760,34 @@
             padding: 0 9px;
             text-align: center;
             box-sizing: border-box; }
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003985}}
+  .layui-table-view .layui-table-tool {
+    padding: 9px;
+    font-size: 0;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    position: relative; }
+    @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003990}}
+    .layui-table-view .layui-table-tool .layui-table-tool-temp {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 0; }
+      @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\00003994}}
+      .layui-table-view .layui-table-tool .layui-table-tool-temp .layui-table-inline {
+        line-height: 25px;
+        padding: 0 7px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 2px;
+        border: none;
+        background: #1e9fff;
+        color: #fff;
+        font-size: 13px; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/D\:\\pycharm\\pythonProject1\\static\\css\/index\.scss}line{font-family:\000031007}}
+        .layui-table-view .layui-table-tool .layui-table-tool-temp .layui-table-inline:hover {
+          opacity: 0.8; }
